@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NewGoods</title>
+</head>
+<body>
+  
+ 
+    
+    <div className="space-y-8">
+      <section className="bg-white rounded-lg shadow-md p-6">
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">Sales & Sell-Through Rate Analysis Dashboard</h2>
+        <p className="text-gray-600 mb-6">
+          This interactive dashboard provides comprehensive analysis of store sales performance and sell-through rates,
+          helping you identify which stores and suppliers are performing best and make data-driven inventory decisions.
+        </p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <Link href="/dashboard" className="bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg p-4 transition duration-200">
+            <h3 className="font-semibold text-blue-700">Dashboard</h3>
+            <p className="text-sm text-gray-600">View key performance metrics and visualizations</p>
+          </Link>
+          
+          <Link href="/stores" className="bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg p-4 transition duration-200">
+            <h3 className="font-semibold text-green-700">Store Analysis</h3>
+            <p className="text-sm text-gray-600">Compare performance across different stores</p>
+          </Link>
+          
+          <Link href="/suppliers" className="bg-purple-50 hover:bg-purple-100 border border-purple-200 rounded-lg p-4 transition duration-200">
+            <h3 className="font-semibold text-purple-700">Supplier Analysis</h3>
+            <p className="text-sm text-gray-600">Evaluate supplier performance metrics</p>
+          </Link>
+          
+          <Link href="/recommendations" className="bg-amber-50 hover:bg-amber-100 border border-amber-200 rounded-lg p-4 transition duration-200">
+            <h3 className="font-semibold text-amber-700">Recommendations</h3>
+            <p className="text-sm text-gray-600">View data-driven inventory recommendations</p>
+          </Link>
+        </div>
+      </section>
+      
+      <section className="bg-white rounded-lg shadow-md p-6">
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">Key Findings</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="border border-gray-200 rounded-lg p-4">
+            <h3 className="font-semibold text-gray-800 mb-2">Best Sales Performance</h3>
+            <p className="text-gray-700 font-bold">Alton Store</p>
+            <p className="text-sm text-gray-600">Led in total sales value ($13,579) and quantity sold (3,879 items)</p>
+          </div>
+          
+          <div className="border border-gray-200 rounded-lg p-4">
+            <h3 className="font-semibold text-gray-800 mb-2">Best Sell-Through Rate</h3>
+            <p className="text-gray-700 font-bold">Jefferson City Store</p>
+            <p className="text-sm text-gray-600">Highest sell-through rate among stores with significant sales volume</p>
+          </div>
+          
+          <div className="border border-gray-200 rounded-lg p-4">
+            <h3 className="font-semibold text-gray-800 mb-2">Top Supplier</h3>
+            <p className="text-gray-700 font-bold">Arbel Group, LLC</p>
+            <p className="text-sm text-gray-600">Strong sell-through rate (220%) and highest profit ($142,108)</p>
+          </div>
+        </div>
+      </section>
+      
+      <section className="bg-white rounded-lg shadow-md p-6">
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">Recommendation Summary</h2>
+        <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+          <p className="text-gray-800">
+            Based on comprehensive analysis of filtered data (sell-through rates below 100% and non-zero cost items), 
+            we recommend prioritizing <span className="font-bold">Alton store</span> with 
+            <span className="font-bold"> Arbel Group, LLC</span> products for the next month's inventory allocation.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    </body>
+    </html>
